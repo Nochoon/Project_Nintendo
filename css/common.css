@@ -1,0 +1,583 @@
+@import url("reset.css");
+@import url("../font/Pretendard/pretendard.css");
+:root {
+  --red: #e6001f;
+  --black: #222222;
+  --gray: #656565;
+  --gray2: #f7f7f7;
+  --lineheight: 1.4;
+}
+
+html {
+  font-size: 10px;
+  font-family: "pretendard";
+  font-weight: 400;
+  color: var(--black);
+}
+
+.header {
+  width: 192rem;
+  height: 10rem;
+}
+.header .header-wrap {
+  max-width: 160rem;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.header .header-wrap .inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header-wrap .inner .logo {
+  width: 13.5rem;
+}
+.header .header-wrap .inner .logo img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header .header-wrap .inner .nav .gnb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+}
+.header .header-wrap .inner .nav .gnb li {
+  font-size: 2rem;
+  line-height: calc(2rem * var(--lineheight));
+  color: var(--black);
+}
+.header .header-wrap .inner .util {
+  width: 4rem;
+  height: 4rem;
+}
+.header .header-wrap .inner .util .search {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.header .header-wrap .inner .util .search img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main {
+  max-width: 192rem;
+  width: 100%;
+  height: 100%;
+}
+main .swiper.mainvisual {
+  width: 100%;
+  height: calc(100vh - 10rem);
+}
+main .swiper.mainvisual .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+main .swiper.mainvisual .swiper-wrapper .swiper-slide a {
+  display: block;
+  width: 100%;
+}
+main .swiper.mainvisual .swiper-wrapper .swiper-slide a img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .section-news .inner {
+  max-width: 160rem;
+  width: 100%;
+  height: 100%;
+  padding: 30rem 0 30rem;
+  margin: 0 auto;
+}
+main .section-news .inner .top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+main .section-news .inner .top .title {
+  text-align: left;
+}
+main .section-news .inner .top .title p {
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: calc(2.8rem * var(--lineheight));
+}
+main .section-news .inner .top .title strong {
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: calc(6.2rem * var(--lineheight));
+}
+main .section-news .inner .top .morepage {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+main .section-news .inner .top .morepage p {
+  font-size: 2rem;
+  font-weight: 700;
+}
+main .section-news .inner .top .morepage img {
+  display: block;
+  width: 2.4rem;
+}
+main .section-news .inner .content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .section-news .inner .content .news-thumbnail {
+  width: 78rem;
+  height: 50rem;
+  margin: 0;
+  order: 1;
+}
+main .section-news .inner .content .news-thumbnail img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .section-news .inner .content .news-title {
+  width: 65.5rem;
+  height: 65.5rem;
+  margin: 0;
+}
+main .section-news .inner .content .news-title .swiper-wrapper .swiper-slide {
+  width: 100%;
+  padding: 1rem 1rem 4rem 1rem;
+  opacity: 0.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.4rem;
+  border-bottom: none;
+}
+main .section-news .inner .content .news-title .swiper-wrapper strong {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: calc(2rem * var(--lineheight));
+}
+main .section-news .inner .content .news-title .swiper-wrapper .info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+main .section-news .inner .content .news-title .swiper-wrapper .info p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: calc(1.6rem * var(--lineheight));
+}
+main .section-news .inner .content .news-title .swiper-wrapper .swiper-slide-visible {
+  border-bottom: solid 1px;
+}
+main .section-news .inner .content .news-title .swiper-wrapper .swiper-slide-thumb-active {
+  opacity: 1;
+  background-color: var(--red);
+  color: white;
+  border-bottom: none;
+}
+main .nintendo-today {
+  display: flex;
+  justify-content: center;
+}
+main .section-software {
+  padding-top: 30rem;
+}
+main .section-software .inner .top {
+  margin: 0 auto;
+  max-width: 160rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+main .section-software .inner .top .title {
+  text-align: left;
+}
+main .section-software .inner .top .title p {
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: calc(2.8rem * var(--lineheight));
+}
+main .section-software .inner .top .title strong {
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: calc(6.2rem * var(--lineheight));
+}
+main .section-software .inner .top .morepage {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  gap: 1rem;
+}
+main .section-software .inner .top .morepage p {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: calc(2rem * var(--lineheight));
+}
+main .section-software .inner .top .morepage img {
+  display: block;
+  width: 2.8rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .section-software .inner .content .software-slide .swiper-wrapper .swiper-slide {
+  width: 25%;
+}
+main .section-software .inner .content .software-slide .swiper-wrapper .swiper-slide .item {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .section-software .inner .content .software-slide .swiper-wrapper .swiper-slide .item img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .section-software .inner .content .software-slide .swiper-wrapper .swiper-slide .item .textbox {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .section-software .inner .content .software-slide .swiper-wrapper .swiper-slide .item .textbox strong {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: calc(2.4rem * var(--lineheight));
+}
+main .section-software .inner .content .software-slide .swiper-wrapper .swiper-slide .item .textbox .info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+main .section-software .inner .content .software-slide .swiper-wrapper .swiper-slide .item .textbox .info strong {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: calc(1.6rem * var(--lineheight));
+}
+main .section-software .inner .content .software-slide .swiper-wrapper .swiper-slide .item .textbox .info .version p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: calc(1.6rem * var(--lineheight));
+  color: var(--gray);
+}
+main .section-software .inner .content .software-slide .swiper-wrapper .swiper-slide .item .textbox .info span {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: calc(1.6rem * var(--lineheight));
+  color: var(--gray);
+}
+main .section-banner {
+  padding-top: 30rem;
+}
+main .section-banner .inner {
+  max-width: 119.5rem;
+  margin: 0 auto;
+}
+main .section-banner .inner .banners {
+  display: flex;
+  gap: 2rem;
+}
+main .section-banner .inner .banners li {
+  width: 38.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--gray2);
+  position: relative;
+  overflow: hidden;
+  padding: 3rem;
+}
+main .section-banner .inner .banners li a {
+  display: block;
+}
+main .section-banner .inner .banners li strong {
+  font-size: 4rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+main .section-banner .inner .banners li p {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+main .section-banner .inner .banners .left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .section-banner .inner .banners .left li:first-child {
+  height: 40rem;
+}
+main .section-banner .inner .banners .left li:first-child .imagebox {
+  width: 38.5rem;
+  height: 24.5rem;
+  position: absolute;
+  bottom: -8rem;
+  right: -12rem;
+}
+main .section-banner .inner .banners .left li:first-child .imagebox img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .section-banner .inner .banners .left li:nth-child(2) {
+  height: 30rem;
+}
+main .section-banner .inner .banners .left li:nth-child(2) .imagebox {
+  position: absolute;
+  bottom: -9rem;
+  right: -15rem;
+}
+main .section-banner .inner .banners .left li:nth-child(2) .imagebox img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .section-banner .inner .banners .center {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .section-banner .inner .banners .center li:first-child {
+  height: 30rem;
+}
+main .section-banner .inner .banners .center li:first-child a {
+  display: block;
+}
+main .section-banner .inner .banners .center li:first-child .imagebox {
+  position: absolute;
+  bottom: -5rem;
+  right: 0rem;
+}
+main .section-banner .inner .banners .center li:first-child .imagebox img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .section-banner .inner .banners .center li:nth-child(2) {
+  height: 40rem;
+}
+main .section-banner .inner .banners .center li:nth-child(2) .imagebox {
+  width: 14.3rem;
+  height: 16.8rem;
+  position: absolute;
+  bottom: -0.2rem;
+  right: 0rem;
+}
+main .section-banner .inner .banners .center li:nth-child(2) .imagebox img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .section-banner .inner .banners .right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .section-banner .inner .banners li:first-child {
+  height: 40rem;
+}
+main .section-banner .inner .banners li:first-child .imagebox {
+  position: absolute;
+  bottom: -0.5rem;
+  right: 0rem;
+}
+main .section-banner .inner .banners li:first-child .imagebox img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .section-banner .inner .banners li:nth-child(2) {
+  height: 30rem;
+}
+main .section-banner .inner .banners li:nth-child(2) .imagebox {
+  position: absolute;
+  bottom: 0rem;
+  right: 0rem;
+}
+main .section-banner .inner .banners li:nth-child(2) .imagebox img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .section-download {
+  padding-top: 30rem;
+}
+main .section-download .inner {
+  max-width: 160rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+main .section-download .inner .title h2 {
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: calc(6.2rem * var(--lineheight));
+  text-align: center;
+}
+main .section-download .inner .list {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+}
+main .section-download .inner .list .item {
+  width: 32.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 1rem;
+  border: 0.1rem solid #c0c0c0;
+  padding: 2rem;
+}
+main .section-download .inner .list .item .text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .section-download .inner .list .item .text strong {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: calc(2.4rem * var(--lineheight));
+}
+main .section-download .inner .list .item .text p {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: calc(2rem * var(--lineheight));
+}
+main .section-download .inner .list .item .imagebox {
+  width: 8rem;
+}
+main .section-download .inner .list .item .imagebox img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer {
+  margin-top: 10rem;
+  width: 160rem;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+footer .label {
+  width: 100%;
+  height: 6rem;
+  background-color: var(--red);
+  display: flex;
+  align-items: center;
+}
+footer .label a {
+  display: block;
+  width: 13.5rem;
+}
+footer .label a img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+footer .sns {
+  margin-top: 5rem;
+  display: flex;
+  gap: 2rem;
+}
+footer .footer-top {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-top .left {
+  display: flex;
+  gap: 2rem;
+}
+footer .footer-top .left a {
+  display: block;
+  width: 25rem;
+}
+footer .footer-top .left a img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+footer .footer-top .right {
+  width: 65.93%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 10rem;
+}
+footer .footer-top .right .depth-01 > li {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: calc(2.4rem * var(--lineheight));
+  text-align: center;
+}
+footer .footer-top .right .depth-01 .depth-02 {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer .footer-top .right .depth-01 .depth-02 a {
+  display: block;
+}
+footer .footer-top .right .depth-01 .depth-02 a > li {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: calc(1.6rem * var(--lineheight));
+  text-align: center;
+}
+footer .footer-bottom {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+footer .footer-bottom .tos {
+  display: flex;
+  gap: 4rem;
+}
+footer .footer-bottom .tos a {
+  display: block;
+}
+footer .footer-bottom .tos a p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: calc(1.4rem * var(--lineheight));
+}
+footer .footer-bottom .tos a strong {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: calc(1.4rem * var(--lineheight));
+}
+footer .footer-bottom .company {
+  display: flex;
+  gap: 4rem;
+}
+footer .footer-bottom .company p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: calc(1.4rem * var(--lineheight));
+}
+footer .footer-bottom .tel {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-bottom .tel span {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: calc(1.4rem * var(--lineheight));
+}
+footer .footer-bottom .tel p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: calc(1.2rem * var(--lineheight));
+}
+footer .footer-bottom .copyright p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: calc(1.4rem * var(--lineheight));
+}/*# sourceMappingURL=common.css.map */
