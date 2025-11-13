@@ -10,7 +10,7 @@ window.onload = () => {
     },
   });
 
-  //section-news
+  //section-news.
   const newsTitleSwiper = new Swiper(".news-title", {
     direction: "vertical",
     pagination: {
