@@ -65,6 +65,9 @@ html {
   color: var(--black);
 }
 @media (max-width: 1600px) {
+  .header .header-wrap .inner {
+    padding: 0 2rem;
+  }
   .header .header-wrap .inner .nav {
     display: none;
   }
