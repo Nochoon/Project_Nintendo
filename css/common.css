@@ -14,10 +14,23 @@ html {
   font-weight: 400;
   color: var(--black);
 }
+@media (max-width: 1024px) {
+  html {
+    font-size: 6px;
+  }
+}
 
 .header {
   width: 192rem;
   height: 10rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10rem;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  z-index: 99;
 }
 .header .header-wrap {
   max-width: 160rem;
@@ -51,6 +64,11 @@ html {
   line-height: calc(2rem * var(--lineheight));
   color: var(--black);
 }
+@media (max-width: 1600px) {
+  .header .header-wrap .inner .nav {
+    display: none;
+  }
+}
 .header .header-wrap .inner .util {
   width: 4rem;
   height: 4rem;
@@ -73,7 +91,13 @@ main {
 }
 main .swiper.mainvisual {
   width: 100%;
+  margin-top: 10rem;
   height: calc(100vh - 10rem);
+}
+@media (max-width: 1440px) {
+  main .swiper.mainvisual {
+    height: 100%;
+  }
 }
 main .swiper.mainvisual .swiper-wrapper {
   width: 100%;
@@ -88,11 +112,13 @@ main .swiper.mainvisual .swiper-wrapper .swiper-slide a img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+main .section-news {
+  padding: 30rem 0 30rem;
+}
 main .section-news .inner {
   max-width: 160rem;
   width: 100%;
   height: 100%;
-  padding: 30rem 0 30rem;
   margin: 0 auto;
 }
 main .section-news .inner .top {
@@ -126,14 +152,19 @@ main .section-news .inner .top .morepage img {
   display: block;
   width: 2.4rem;
 }
+@media (max-width: 1600px) {
+  main .section-news .inner .top {
+    padding: 0 2rem;
+  }
+}
 main .section-news .inner .content {
+  max-width: 160rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 main .section-news .inner .content .news-thumbnail {
-  width: 78rem;
-  height: 50rem;
+  width: 48.75%;
   margin: 0;
   order: 1;
 }
@@ -181,9 +212,26 @@ main .section-news .inner .content .news-title .swiper-wrapper .swiper-slide-thu
   color: white;
   border-bottom: none;
 }
+@media (max-width: 1440px) {
+  main .section-news .inner .content {
+    flex-direction: column;
+  }
+  main .section-news .inner .content .news-thumbnail {
+    width: 100%;
+    order: 0;
+  }
+  main .section-news .inner .content .news-title {
+    width: 100%;
+  }
+}
 main .nintendo-today {
   display: flex;
   justify-content: center;
+}
+main .nintendo-today img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main .section-software {
   padding-top: 30rem;
@@ -224,6 +272,11 @@ main .section-software .inner .top .morepage img {
   width: 2.8rem;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 1024px) {
+  main .section-software .inner .top {
+    padding: 0 2rem;
+  }
 }
 main .section-software .inner .content .software-slide .swiper-wrapper .swiper-slide {
   width: 25%;
@@ -282,7 +335,7 @@ main .section-banner .inner .banners {
   gap: 2rem;
 }
 main .section-banner .inner .banners li {
-  width: 38.5rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: var(--gray2);
@@ -459,8 +512,7 @@ main .section-download .inner .list .item .imagebox img {
 
 footer {
   margin-top: 10rem;
-  width: 160rem;
-  margin: 0 auto;
+  width: 100%;
   padding-bottom: 4rem;
 }
 footer .label {
@@ -479,105 +531,146 @@ footer .label a img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-footer .sns {
+footer .inner {
+  max-width: 160rem;
+  margin: 0 auto;
+}
+footer .inner .sns {
   margin-top: 5rem;
   display: flex;
   gap: 2rem;
 }
-footer .footer-top {
+footer .inner .footer-top {
   margin-top: 5rem;
   display: flex;
   justify-content: space-between;
 }
-footer .footer-top .left {
+footer .inner .footer-top .left {
   display: flex;
   gap: 2rem;
 }
-footer .footer-top .left a {
+footer .inner .footer-top .left a {
   display: block;
   width: 25rem;
 }
-footer .footer-top .left a img {
+footer .inner .footer-top .left a img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-footer .footer-top .right {
+footer .inner .footer-top .right {
   width: 65.93%;
   display: flex;
   justify-content: center;
   align-items: start;
   gap: 10rem;
 }
-footer .footer-top .right .depth-01 > li {
+footer .inner .footer-top .right .depth-01 > li {
   font-size: 2.4rem;
   font-weight: 700;
   line-height: calc(2.4rem * var(--lineheight));
   text-align: center;
 }
-footer .footer-top .right .depth-01 .depth-02 {
+footer .inner .footer-top .right .depth-01 .depth-02 {
   padding-top: 3rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-footer .footer-top .right .depth-01 .depth-02 a {
+footer .inner .footer-top .right .depth-01 .depth-02 a {
   display: block;
 }
-footer .footer-top .right .depth-01 .depth-02 a > li {
+footer .inner .footer-top .right .depth-01 .depth-02 a > li {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: calc(1.6rem * var(--lineheight));
   text-align: center;
 }
-footer .footer-bottom {
+footer .inner .footer-bottom {
   margin-top: 5rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-footer .footer-bottom .tos {
+footer .inner .footer-bottom .tos {
   display: flex;
   gap: 4rem;
 }
-footer .footer-bottom .tos a {
+footer .inner .footer-bottom .tos a {
   display: block;
 }
-footer .footer-bottom .tos a p {
+footer .inner .footer-bottom .tos a p {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: calc(1.4rem * var(--lineheight));
 }
-footer .footer-bottom .tos a strong {
+footer .inner .footer-bottom .tos a strong {
   font-size: 1.4rem;
   font-weight: 700;
   line-height: calc(1.4rem * var(--lineheight));
 }
-footer .footer-bottom .company {
+footer .inner .footer-bottom .company {
   display: flex;
   gap: 4rem;
 }
-footer .footer-bottom .company p {
+footer .inner .footer-bottom .company p {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: calc(1.4rem * var(--lineheight));
 }
-footer .footer-bottom .tel {
+footer .inner .footer-bottom .tel {
   display: flex;
   flex-direction: column;
 }
-footer .footer-bottom .tel span {
+footer .inner .footer-bottom .tel span {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: calc(1.4rem * var(--lineheight));
 }
-footer .footer-bottom .tel p {
+footer .inner .footer-bottom .tel p {
   font-size: 1.2rem;
   font-weight: 400;
   line-height: calc(1.2rem * var(--lineheight));
 }
-footer .footer-bottom .copyright p {
+footer .inner .footer-bottom .copyright p {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: calc(1.4rem * var(--lineheight));
+}
+@media (max-width: 1440px) {
+  footer .inner .sns {
+    justify-content: center;
+  }
+  footer .inner .footer-top {
+    flex-direction: column;
+  }
+  footer .inner .footer-top .left {
+    justify-content: center;
+  }
+  footer .inner .footer-top .right {
+    width: 100%;
+    margin-top: 5rem;
+  }
+}
+@media (max-width: 1440px) and (max-width: 870px) {
+  footer .inner .footer-top .right {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+  footer .inner .footer-top .right .depth-01 .depth-02 {
+    display: none;
+  }
+}
+@media (max-width: 1440px) {
+  footer .inner .footer-bottom .tos,
+  footer .inner .footer-bottom .company {
+    justify-content: center;
+  }
+  footer .inner .footer-bottom .tel {
+    text-align: center;
+  }
+  footer .inner .footer-bottom .copyright {
+    text-align: center;
+  }
 }/*# sourceMappingURL=common.css.map */
